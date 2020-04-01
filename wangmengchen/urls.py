@@ -17,11 +17,12 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
-from article.views import index, subject
+from article.views import index, subject, upload_article
 from user.views import signin
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", index),
     path("signin/", signin),
-    path("subject/", subject)
+    path("subject/", subject),
+    path("upload/", upload_article),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
