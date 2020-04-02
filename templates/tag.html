@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="pi-section-w pi-section-white piCaptions">
+	
+		<a href="{{ text.url }}" target="_blank">{{ text.title }}</a>
+		<img src="/{{ text.image }}">
+	
+</section>
+
+
+
+<!-- - - - - - - - - - SECTION - - - - - - - - - -->
+
+<div class="pi-section-w pi-section-white pi-slider-enabled">
+	<div class="pi-section pi-padding-top-bottom-80">
+
+	{% for text in texts %}
+		<div class="pi-row pi-padding-bottom-20">
+			<div class="pi-col-sm-4 pi-padding-bottom-40">
+				<!-- Slider -->
+				<div class="pi-slider-wrapper pi-slider-arrows-inside pi-slider-show-arrow-hover">
+					<div class="pi-slider pi-slider-animate-opacity">
+
+							<div class="pi-img-w pi-img-round-corners pi-img-shadow pi-img-with-overlay">
+
+								<img src="/{{text.image}}" alt=""/>
+
+							</div>
+
+					</div>
+				</div>
+				<!-- End slider -->
+
+			</div>
+			<div class="pi-col-sm-8 pi-padding-bottom-40">
+
+				<h2 class="h4 pi-weight-700 pi-uppercase pi-letter-spacing pi-has-bg pi-margin-bottom-20 pi-margin-top-minus-5">
+					{{ text.title }}
+				</h2>
+
+				<p>
+					<pre>{{ text.text }}</pre>
+				</p>
+				{% for comment in text.comment_set.all %}
+					<!-- Col 4 -->
+					<div class="pi-col-sm-4">
+						
+						<div class="pi-testimonial pi-testimonial-author-with-photo pi-margin-bottom-40">
+							<div class="pi-testimonial-content pi-testimonial-content-big pi-testimonial-content-quotes pi-testimonial-white">
+								<p>{{ comment.content }}</p>
+							</div>
+							<div class="pi-testimonial-author pi-clearfix">
+								<div>
+									<i class="icon-users pi-icon-circle pi-icon-base pi-icon-big" style="width: 50px; height: 50px; line-height: 50px;"></i>
+									<h6 class="pi-weight-700 pi-no-margin-bottom">{{ comment.user.username }}</h6>
+								</div>
+							</div>
+						</div>
+				
+					</div>
+					<!-- End col 4 -->
+				{% endfor %}
+			</div>
+
+
+			
+		</div>
+
+	
+	{% endfor %}
+	</div>
+</div>
+{% endblock %}
