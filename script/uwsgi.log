@@ -1,0 +1,166 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Apr 21 12:41:11 2020] ***
+compiled with version: 7.5.0 on 21 April 2020 12:40:23
+os: Linux-4.15.0-1057-aws #59-Ubuntu SMP Wed Dec 4 10:02:00 UTC 2019
+nodename: ip-172-31-45-151
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/wmc-ex_2
+writing pidfile to /home/ubuntu/wmc-ex_2/wangmengchen/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/wmc-ex_2/
+your processes number limit is 3840
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 3
+uwsgi socket 0 bound to UNIX address /home/ubuntu/wmc-ex_2/wmc-ex_2.sock fd 6
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5603b53b1cf0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'wmc-ex_2'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5603b53b1cf0 pid: 21199 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21199)
+spawned uWSGI worker 1 (pid: 21201, cores: 1)
+spawned uWSGI worker 2 (pid: 21202, cores: 1)
+spawned uWSGI worker 3 (pid: 21203, cores: 1)
+spawned uWSGI worker 4 (pid: 21204, cores: 1)
+spawned uWSGI worker 5 (pid: 21205, cores: 1)
+spawned uWSGI http 1 (pid: 21206)
+Invalid HTTP_HOST header: '3.134.98.145'. You may need to add '3.134.98.145' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 21202|app: 0|req: 1/1] 220.191.9.230 () {40 vars in 744 bytes} [Tue Apr 21 12:41:33 2020] GET / => generated 55229 bytes in 45 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '3.134.98.145'. You may need to add '3.134.98.145' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[pid: 21203|app: 0|req: 1/2] 220.191.9.230 () {40 vars in 682 bytes} [Tue Apr 21 12:41:58 2020] GET /favicon.ico => generated 55277 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '3.134.98.145'. You may need to add '3.134.98.145' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 21204|app: 0|req: 1/3] 220.191.9.230 () {42 vars in 775 bytes} [Tue Apr 21 12:44:05 2020] GET / => generated 55364 bytes in 42 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Tue Apr 21 12:44:28 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Apr 21 12:44:28 2020 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Apr 21 12:44:28 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Apr 21 12:44:28 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Apr 21 12:44:28 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Apr 21 12:44:38 2020] ***
+compiled with version: 7.5.0 on 21 April 2020 12:40:23
+os: Linux-4.15.0-1057-aws #59-Ubuntu SMP Wed Dec 4 10:02:00 UTC 2019
+nodename: ip-172-31-45-151
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/wmc-ex_2
+writing pidfile to /home/ubuntu/wmc-ex_2/wangmengchen/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/wmc-ex_2/
+your processes number limit is 3840
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 3
+uwsgi socket 0 bound to UNIX address /home/ubuntu/wmc-ex_2/wmc-ex_2.sock fd 6
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x56353b8e8cf0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'wmc-ex_2'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56353b8e8cf0 pid: 21243 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21243)
+spawned uWSGI worker 1 (pid: 21245, cores: 1)
+spawned uWSGI worker 2 (pid: 21246, cores: 1)
+spawned uWSGI worker 3 (pid: 21247, cores: 1)
+spawned uWSGI worker 4 (pid: 21248, cores: 1)
+spawned uWSGI worker 5 (pid: 21249, cores: 1)
+spawned uWSGI http 1 (pid: 21250)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Text.uploadtime received a naive datetime (2020-04-14 12:44:41.935186) while time zone support is active.
+  RuntimeWarning)
+[pid: 21246|app: 0|req: 1/1] 220.191.9.230 () {42 vars in 775 bytes} [Tue Apr 21 12:44:41 2020] GET / => generated 49976 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /img/logo-opacity-dark.png
+[pid: 21248|app: 0|req: 1/2] 220.191.9.230 () {40 vars in 710 bytes} [Tue Apr 21 12:44:47 2020] GET /img/logo-opacity-dark.png => generated 2568 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /img/map-base.png
+[pid: 21245|app: 0|req: 1/3] 220.191.9.230 () {40 vars in 692 bytes} [Tue Apr 21 12:44:48 2020] GET /img/map-base.png => generated 2541 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 21247|app: 0|req: 1/4] 220.191.9.230 () {40 vars in 682 bytes} [Tue Apr 21 12:46:13 2020] GET /favicon.ico => generated 2526 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Tue Apr 21 12:48:25 2020 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Apr 21 12:48:25 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Apr 21 12:48:25 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Apr 21 12:48:25 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Apr 21 12:48:25 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Apr 21 12:49:06 2020] ***
+compiled with version: 7.5.0 on 21 April 2020 12:40:23
+os: Linux-4.15.0-1057-aws #59-Ubuntu SMP Wed Dec 4 10:02:00 UTC 2019
+nodename: ip-172-31-45-151
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/wmc-ex_2
+writing pidfile to /home/ubuntu/wmc-ex_2/wangmengchen/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/wmc-ex_2/
+your processes number limit is 3840
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 3
+uwsgi socket 0 bound to UNIX address /home/ubuntu/wmc-ex_2/wmc-ex_2.sock fd 6
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55d20362fcf0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'wmc-ex_2'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55d20362fcf0 pid: 21423 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21423)
+spawned uWSGI worker 1 (pid: 21425, cores: 1)
+spawned uWSGI worker 2 (pid: 21426, cores: 1)
+spawned uWSGI worker 3 (pid: 21427, cores: 1)
+spawned uWSGI worker 4 (pid: 21428, cores: 1)
+spawned uWSGI worker 5 (pid: 21429, cores: 1)
+spawned uWSGI http 1 (pid: 21430)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Text.uploadtime received a naive datetime (2020-04-14 12:49:38.554425) while time zone support is active.
+  RuntimeWarning)
+[pid: 21426|app: 0|req: 1/1] 220.191.9.230 () {42 vars in 775 bytes} [Tue Apr 21 12:49:38 2020] GET / => generated 49976 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /img/logo-opacity-dark.png
+[pid: 21428|app: 0|req: 1/2] 220.191.9.230 () {40 vars in 710 bytes} [Tue Apr 21 12:49:41 2020] GET /img/logo-opacity-dark.png => generated 2568 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /img/map-base.png
+[pid: 21425|app: 0|req: 1/3] 220.191.9.230 () {40 vars in 692 bytes} [Tue Apr 21 12:49:41 2020] GET /img/map-base.png => generated 2541 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Text.uploadtime received a naive datetime (2020-04-14 12:51:17.760250) while time zone support is active.
+  RuntimeWarning)
+[pid: 21427|app: 0|req: 1/4] 220.191.9.230 () {42 vars in 775 bytes} [Tue Apr 21 12:51:17 2020] GET / => generated 49976 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Text.uploadtime received a naive datetime (2020-04-14 12:51:22.860071) while time zone support is active.
+  RuntimeWarning)
+[pid: 21429|app: 0|req: 1/5] 220.191.9.230 () {42 vars in 775 bytes} [Tue Apr 21 12:51:22 2020] GET / => generated 49976 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /img/logo-opacity-dark.png
+[pid: 21426|app: 0|req: 2/6] 220.191.9.230 () {40 vars in 710 bytes} [Tue Apr 21 12:51:38 2020] GET /img/logo-opacity-dark.png => generated 2568 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /img/map-base.png
+[pid: 21428|app: 0|req: 2/7] 220.191.9.230 () {40 vars in 692 bytes} [Tue Apr 21 12:51:39 2020] GET /img/map-base.png => generated 2541 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Text.uploadtime received a naive datetime (2020-04-14 12:51:40.892686) while time zone support is active.
+  RuntimeWarning)
+[pid: 21425|app: 0|req: 2/8] 220.191.9.230 () {42 vars in 770 bytes} [Tue Apr 21 12:51:40 2020] GET / => generated 49976 bytes in 30 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /img/map-base.png
+[pid: 21427|app: 0|req: 2/9] 220.191.9.230 () {40 vars in 687 bytes} [Tue Apr 21 12:51:46 2020] GET /img/map-base.png => generated 2541 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /img/logo-opacity-dark.png
+[pid: 21429|app: 0|req: 2/10] 220.191.9.230 () {40 vars in 705 bytes} [Tue Apr 21 12:51:48 2020] GET /img/logo-opacity-dark.png => generated 2568 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)

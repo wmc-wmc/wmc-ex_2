@@ -25,7 +25,7 @@ SECRET_KEY = 'auxoqil3q6)ypw4i&-bp&v(%vob+2q%*uapp9lwl3!cq2&*b3h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['3.134.98.145']
 
 
 # Application definition
@@ -120,11 +120,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = "/home/www/static"
-STATIC_ROOT = STATIC_URL
+STATIC_ROOT = "/home/ubuntu/static"
+# STATIC_ROOT = STATIC_URL
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,"static"),
-    "/home/www/static",
+    "/home/ubuntu/static",
 ]
 
 LOGIN_URL = '/signin/'
