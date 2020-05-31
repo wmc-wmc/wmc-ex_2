@@ -10,11 +10,11 @@
 			<div class="pi-col-xs-12">
 				
 				<h2 class="pi-has-bg pi-weight-700 pi-uppercase pi-letter-spacing pi-margin-bottom-25">
-					上传内容
+					Upload
 				</h2>
 				
 				<p>
-					你可以上传符合本网站要求的相关内容，管理员会在24小时内进行审核，审核通过的内容我们会发布在网站上，谢谢！
+					You can upload resources here according to the format of our website. Administrators will review the information you uploaded within 24 hours. We are grateful for your update.
 				</p>
 				{% if success %}
 				<div class="pi-alert-success fade in">
@@ -32,18 +32,18 @@
 				{% csrf_token %}
 					<!-- First name form -->
 					<div class="form-group">
-						<label for="exampleInputName-3">标题</label>
-						
+						<label for="exampleInputName-3">Title</label>
+
 						<div class="pi-input-with-icon">
 							<div class="pi-input-icon"><i class="icon-tag"></i></div>
-							<input type="text" class="form-control" name="title" placeholder="e.g. 如何科学上网">
+							<input type="text" class="form-control" name="title" placeholder="e.g. Challenges in Modern Physics">
 						</div>
 					</div>
 					<!-- End first name form -->
-					
+
 					<!-- Company name form -->
 					<div class="form-group">
-						<label for="exampleInputCompanyname-3">内容链接（URL）</label>
+						<label for="exampleInputCompanyname-3">Link（URL）</label>
 						
 						<div class="pi-input-with-icon">
 							<div class="pi-input-icon"><i class="icon-link"></i></div>
@@ -54,7 +54,7 @@
 					
 					<!-- Email form -->
 					<div class="form-group">
-						<label for="exampleInputEmail-3">相关图片</label>
+						<label for="exampleInputEmail-3">Related images</label>
 						<input type="file" class="form-control" name="image" placeholder="e.g. mail@example.com">
 					</div>
 					<!-- End email form -->
@@ -62,17 +62,17 @@
 					
 					<!-- Message -->
 					<div class="form-group">
-						<label for="exampleInputMessage-3">相关文本描述</label>
+						<label for="exampleInputMessage-3">Description</label>
 						
 						<div class="pi-input-with-icon">
 							<div class="pi-input-icon"><i class="icon-pencil"></i></div>
-							<textarea class="form-control" name="text" placeholder="写一些你的推荐理由" rows="4"></textarea>
+							<textarea class="form-control" name="text" placeholder="Sum up the text, and tell us why you recommend it to us" rows="4"></textarea>
 						</div>
 					</div>
 					<!-- End message form -->
 										<!-- Phone number form -->
 					<div class="form-group">
-						<label for="exampleInputPhone-3">所属主题</label>
+						<label for="exampleInputPhone-3">Subject</label>
 						
 						<div class="pi-input-with-icon">
 							<select class="form-control" name="tag" >
