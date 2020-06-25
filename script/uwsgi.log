@@ -164,3 +164,72 @@ Not Found: /img/map-base.png
 [pid: 21427|app: 0|req: 2/9] 220.191.9.230 () {40 vars in 687 bytes} [Tue Apr 21 12:51:46 2020] GET /img/map-base.png => generated 2541 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
 Not Found: /img/logo-opacity-dark.png
 [pid: 21429|app: 0|req: 2/10] 220.191.9.230 () {40 vars in 705 bytes} [Tue Apr 21 12:51:48 2020] GET /img/logo-opacity-dark.png => generated 2568 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Jun 25 11:51:22 2020] ***
+compiled with version: 7.5.0 on 21 April 2020 12:40:23
+os: Linux-4.15.0-1057-aws #59-Ubuntu SMP Wed Dec 4 10:02:00 UTC 2019
+nodename: ip-172-31-45-151
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/wmc-ex_2
+writing pidfile to /home/ubuntu/wmc-ex_2/wangmengchen/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/wmc-ex_2/
+your processes number limit is 3840
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 3
+uwsgi socket 0 bound to UNIX address /home/ubuntu/wmc-ex_2/wmc-ex_2.sock fd 6
+Python version: 3.6.9 (default, Apr 18 2020, 01:56:04)  [GCC 8.4.0]
+Python main interpreter initialized at 0x563e8fd5ecf0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'wmc-ex_2'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x563e8fd5ecf0 pid: 3194 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3194)
+spawned uWSGI worker 1 (pid: 3196, cores: 1)
+spawned uWSGI worker 2 (pid: 3197, cores: 1)
+spawned uWSGI worker 3 (pid: 3198, cores: 1)
+spawned uWSGI worker 4 (pid: 3199, cores: 1)
+spawned uWSGI worker 5 (pid: 3200, cores: 1)
+spawned uWSGI http 1 (pid: 3201)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Text.uploadtime received a naive datetime (2020-06-18 11:51:27.235769) while time zone support is active.
+  RuntimeWarning)
+[pid: 3197|app: 0|req: 1/1] 223.72.90.229 () {42 vars in 712 bytes} [Thu Jun 25 11:51:27 2020] GET / => generated 23014 bytes in 77 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Text.uploadtime received a naive datetime (2020-06-18 11:51:31.006037) while time zone support is active.
+  RuntimeWarning)
+[pid: 3198|app: 0|req: 1/2] 124.160.154.0 () {40 vars in 748 bytes} [Thu Jun 25 11:51:30 2020] GET / => generated 23014 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+Not Found: /img/map-base.png
+[pid: 3196|app: 0|req: 1/3] 223.72.90.229 () {40 vars in 657 bytes} [Thu Jun 25 11:51:31 2020] GET /img/map-base.png => generated 2544 bytes in 22 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 3200|app: 0|req: 1/4] 223.72.90.229 () {40 vars in 693 bytes} [Thu Jun 25 11:51:55 2020] GET /upload => generated 0 bytes in 15 msecs (HTTP/1.1 301) 3 headers in 113 bytes (1 switches on core 0)
+[pid: 3199|app: 0|req: 1/5] 223.72.90.229 () {40 vars in 695 bytes} [Thu Jun 25 11:51:56 2020] GET /upload/ => generated 0 bytes in 29 msecs (HTTP/1.1 302) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 3197|app: 0|req: 2/6] 223.72.90.229 () {40 vars in 722 bytes} [Thu Jun 25 11:51:56 2020] GET /signin/?next=/upload/ => generated 11107 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+Not Found: /signin/img/map-base.png
+[pid: 3198|app: 0|req: 2/7] 223.72.90.229 () {42 vars in 781 bytes} [Thu Jun 25 11:51:56 2020] GET /signin/img/map-base.png => generated 2565 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 3196|app: 0|req: 2/8] 223.72.90.229 () {42 vars in 781 bytes} [Thu Jun 25 11:52:05 2020] GET /upload/ => generated 0 bytes in 13 msecs (HTTP/1.1 302) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 3200|app: 0|req: 2/9] 223.72.90.229 () {42 vars in 808 bytes} [Thu Jun 25 11:52:05 2020] GET /signin/?next=/upload/ => generated 11107 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+Not Found: /signin/img/map-base.png
+[pid: 3199|app: 0|req: 2/10] 223.72.90.229 () {42 vars in 775 bytes} [Thu Jun 25 11:52:06 2020] GET /signin/img/map-base.png => generated 2562 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 3197|app: 0|req: 3/11] 223.72.90.229 () {50 vars in 989 bytes} [Thu Jun 25 11:52:09 2020] POST /signin/ => generated 0 bytes in 282 msecs (HTTP/1.1 302) 7 headers in 450 bytes (1 switches on core 0)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Text.uploadtime received a naive datetime (2020-06-18 11:52:10.253974) while time zone support is active.
+  RuntimeWarning)
+[pid: 3198|app: 0|req: 3/12] 223.72.90.229 () {44 vars in 868 bytes} [Thu Jun 25 11:52:10 2020] GET / => generated 23026 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /img/map-base.png
+[pid: 3196|app: 0|req: 3/13] 223.72.90.229 () {42 vars in 784 bytes} [Thu Jun 25 11:52:10 2020] GET /img/map-base.png => generated 2541 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/map-base.png
+[pid: 3200|app: 0|req: 3/14] 124.160.154.0 () {38 vars in 669 bytes} [Thu Jun 25 11:52:13 2020] GET /img/map-base.png => generated 2544 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 3199|app: 0|req: 3/15] 223.72.90.229 () {42 vars in 825 bytes} [Thu Jun 25 11:52:16 2020] GET /upload/ => generated 11850 bytes in 26 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+Not Found: /upload/img/map-base.png
+[pid: 3197|app: 0|req: 4/16] 223.72.90.229 () {42 vars in 805 bytes} [Thu Jun 25 11:52:16 2020] GET /upload/img/map-base.png => generated 2562 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Text.uploadtime received a naive datetime (2020-06-18 11:52:38.308242) while time zone support is active.
+  RuntimeWarning)
+[pid: 3198|app: 0|req: 4/17] 223.72.90.229 () {42 vars in 770 bytes} [Thu Jun 25 11:52:38 2020] GET / => generated 23014 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
