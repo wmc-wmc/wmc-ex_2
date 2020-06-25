@@ -12,6 +12,7 @@ class Tag(models.Model):
         return self.name
 
 
+
 class Text(models.Model):
     title = models.CharField(max_length = 255)
     url = models.URLField(max_length=250, blank=True)

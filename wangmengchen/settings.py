@@ -25,7 +25,7 @@ SECRET_KEY = 'auxoqil3q6)ypw4i&-bp&v(%vob+2q%*uapp9lwl3!cq2&*b3h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.134.98.145']
+ALLOWED_HOSTS = ['3.134.98.145','www.int-day.com','int-day.com','127.0.0.1']
 
 
 # Application definition
@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = "/home/ubuntu/static"
-# STATIC_ROOT = STATIC_URL
+STATIC_ROOT = STATIC_URL
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,"static"),
     "/home/ubuntu/static",
