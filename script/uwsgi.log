@@ -233,3 +233,73 @@ Not Found: /upload/img/map-base.png
 /home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Text.uploadtime received a naive datetime (2020-06-18 11:52:38.308242) while time zone support is active.
   RuntimeWarning)
 [pid: 3198|app: 0|req: 4/17] 223.72.90.229 () {42 vars in 770 bytes} [Thu Jun 25 11:52:38 2020] GET / => generated 23014 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun 29 11:20:24 2020] ***
+compiled with version: 7.5.0 on 21 April 2020 12:40:23
+os: Linux-4.15.0-1057-aws #59-Ubuntu SMP Wed Dec 4 10:02:00 UTC 2019
+nodename: ip-172-31-45-151
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/wmc-ex_2
+writing pidfile to /home/ubuntu/wmc-ex_2/wangmengchen/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/wmc-ex_2/
+your processes number limit is 3840
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 3
+uwsgi socket 0 bound to UNIX address /home/ubuntu/wmc-ex_2/wmc-ex_2.sock fd 6
+Python version: 3.6.9 (default, Apr 18 2020, 01:56:04)  [GCC 8.4.0]
+Python main interpreter initialized at 0x55c736b31cf0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'wmc-ex_2'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55c736b31cf0 pid: 20829 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20829)
+spawned uWSGI worker 1 (pid: 20831, cores: 1)
+spawned uWSGI worker 2 (pid: 20832, cores: 1)
+spawned uWSGI worker 3 (pid: 20833, cores: 1)
+spawned uWSGI worker 4 (pid: 20834, cores: 1)
+spawned uWSGI worker 5 (pid: 20835, cores: 1)
+spawned uWSGI http 1 (pid: 20836)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Text.uploadtime received a naive datetime (2020-06-22 11:20:53.742307) while time zone support is active.
+  RuntimeWarning)
+[pid: 20832|app: 0|req: 1/1] 223.72.90.229 () {42 vars in 712 bytes} [Mon Jun 29 11:20:53 2020] GET / => generated 23083 bytes in 74 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Text.uploadtime received a naive datetime (2020-06-22 11:20:54.885511) while time zone support is active.
+  RuntimeWarning)
+[pid: 20831|app: 0|req: 1/2] 122.234.144.200 () {40 vars in 749 bytes} [Mon Jun 29 11:20:54 2020] GET / => generated 23083 bytes in 50 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Text.uploadtime received a naive datetime (2020-06-22 11:21:13.851101) while time zone support is active.
+  RuntimeWarning)
+[pid: 20834|app: 0|req: 1/3] 122.234.144.200 () {42 vars in 780 bytes} [Mon Jun 29 11:21:13 2020] GET / => generated 23083 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+Not Found: /img/map-base.png
+[pid: 20833|app: 0|req: 1/4] 107.167.244.38 () {40 vars in 659 bytes} [Mon Jun 29 11:21:20 2020] GET /img/map-base.png => generated 2544 bytes in 22 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Text.uploadtime received a naive datetime (2020-06-22 11:21:21.031356) while time zone support is active.
+  RuntimeWarning)
+[pid: 20835|app: 0|req: 1/5] 107.167.244.38 () {42 vars in 714 bytes} [Mon Jun 29 11:21:21 2020] GET / => generated 23083 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /img/map-base.png
+[pid: 20832|app: 0|req: 2/6] 107.167.244.38 () {42 vars in 690 bytes} [Mon Jun 29 11:21:24 2020] GET /img/map-base.png => generated 2544 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 20831|app: 0|req: 2/7] 107.167.244.38 () {40 vars in 693 bytes} [Mon Jun 29 11:21:28 2020] GET /admin => generated 0 bytes in 2 msecs (HTTP/1.1 301) 3 headers in 112 bytes (2 switches on core 0)
+[pid: 20834|app: 0|req: 2/8] 107.167.244.38 () {40 vars in 695 bytes} [Mon Jun 29 11:21:28 2020] GET /admin/ => generated 0 bytes in 21 msecs (HTTP/1.1 302) 7 headers in 265 bytes (2 switches on core 0)
+[pid: 20833|app: 0|req: 2/9] 107.167.244.38 () {40 vars in 732 bytes} [Mon Jun 29 11:21:28 2020] GET /admin/login/?next=/admin/ => generated 1819 bytes in 59 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+Not Found: /img/map-base.png
+[pid: 20835|app: 0|req: 2/10] 122.234.144.200 () {40 vars in 700 bytes} [Mon Jun 29 11:21:30 2020] GET /img/map-base.png => generated 2544 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 20832|app: 0|req: 3/11] 107.167.244.38 () {50 vars in 1039 bytes} [Mon Jun 29 11:21:32 2020] POST /admin/login/?next=/admin/ => generated 0 bytes in 287 msecs (HTTP/1.1 302) 9 headers in 559 bytes (1 switches on core 0)
+[pid: 20831|app: 0|req: 3/12] 107.167.244.38 () {44 vars in 892 bytes} [Mon Jun 29 11:21:33 2020] GET /admin/ => generated 6421 bytes in 40 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 20834|app: 0|req: 3/13] 107.167.244.38 () {44 vars in 897 bytes} [Mon Jun 29 11:21:38 2020] GET /admin/article/tag/ => generated 4550 bytes in 54 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 20833|app: 0|req: 3/14] 107.167.244.38 () {42 vars in 793 bytes} [Mon Jun 29 11:21:39 2020] GET /admin/jsi18n/ => generated 3223 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 20835|app: 0|req: 3/15] 107.167.244.38 () {44 vars in 892 bytes} [Mon Jun 29 11:21:42 2020] GET /admin/ => generated 6421 bytes in 40 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 20832|app: 0|req: 4/16] 107.167.244.38 () {44 vars in 899 bytes} [Mon Jun 29 11:21:44 2020] GET /admin/article/text/ => generated 10726 bytes in 61 msecs (HTTP/1.1 200) 7 headers in 396 bytes (1 switches on core 0)
+[pid: 20831|app: 0|req: 4/17] 107.167.244.38 () {50 vars in 1066 bytes} [Mon Jun 29 11:21:48 2020] POST /admin/article/text/ => generated 3480 bytes in 28 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 20834|app: 0|req: 4/18] 107.167.244.38 () {50 vars in 1066 bytes} [Mon Jun 29 11:21:50 2020] POST /admin/article/text/ => generated 0 bytes in 55 msecs (HTTP/1.1 302) 8 headers in 428 bytes (1 switches on core 0)
+[pid: 20833|app: 0|req: 4/19] 107.167.244.38 () {44 vars in 1036 bytes} [Mon Jun 29 11:21:51 2020] GET /admin/article/text/ => generated 3287 bytes in 31 msecs (HTTP/1.1 200) 8 headers in 479 bytes (1 switches on core 0)
+[pid: 20835|app: 0|req: 4/20] 107.167.244.38 () {44 vars in 902 bytes} [Mon Jun 29 11:21:54 2020] GET /admin/article/ => generated 3752 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 20832|app: 0|req: 5/21] 107.167.244.38 () {44 vars in 881 bytes} [Mon Jun 29 11:21:57 2020] GET /admin/ => generated 6920 bytes in 21 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
