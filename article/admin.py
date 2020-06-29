@@ -1,5 +1,5 @@
 from django.contrib import admin
-from article.models import Text, Favorite, Tag, Comment
+from article.models import Text, Favorite, Tag, Comment, Type
 # Register your models here.
 class TextAdmin(admin.ModelAdmin):
 
