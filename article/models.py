@@ -11,6 +11,13 @@ class Tag(models.Model):
     def __str__(self):
         return self.name
 
+class Type(models.Model):
+
+    name = models.CharField(max_length=255)
+    created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
 
 
 class Text(models.Model):

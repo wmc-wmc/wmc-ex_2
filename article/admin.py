@@ -15,6 +15,9 @@ class TagAdmin(admin.ModelAdmin):
 
 	list_display = ('name', )
 
+class TypeAdmin(admin.ModelAdmin):
+
+	list_display = ('name', )
 
 class CommentAdmin(admin.ModelAdmin):
 
@@ -25,3 +28,4 @@ admin.site.register(Text, TextAdmin)
 admin.site.register(Favorite, FavoriteAdmin)
 admin.site.register(Tag, TagAdmin)
 admin.site.register(Comment, CommentAdmin)
+admin.site.register(Type, TypeAdmin)
