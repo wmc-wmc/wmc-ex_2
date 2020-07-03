@@ -3,8 +3,7 @@ from article.models import Text, Favorite, Tag, Comment, Type
 # Register your models here.
 class TextAdmin(admin.ModelAdmin):
 
-    list_display = ("id","title", "image","uploadtime","text","url", "enable")
-
+    list_display = ("id","title", "image1","image2", "image3", "uploadtime","text","url", "enable")
 
 class FavoriteAdmin(admin.ModelAdmin):
 

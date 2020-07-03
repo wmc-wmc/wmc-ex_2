@@ -54,11 +54,22 @@
 					
 					<!-- Email form -->
 					<div class="form-group">
-						<label for="exampleInputEmail-3">Related images</label>
-						<input type="file" class="form-control" name="image" placeholder="e.g. mail@example.com">
+						<label for="exampleInputEmail-3">Related images 1</label>
+						<input type="file" class="form-control" name="image1" placeholder="e.g. mail@example.com">
 					</div>
 					<!-- End email form -->
-					
+					<!-- Email form -->
+					<div class="form-group">
+						<label for="exampleInputEmail-3">Related images 2</label>
+						<input type="file" class="form-control" name="image2" placeholder="e.g. mail@example.com">
+					</div>
+					<!-- End email form -->
+					<!-- Email form -->
+					<div class="form-group">
+						<label for="exampleInputEmail-3">Related images 3</label>
+						<input type="file" class="form-control" name="image3" placeholder="e.g. mail@example.com">
+					</div>
+					<!-- End email form -->
 					
 					<!-- Message -->
 					<div class="form-group">
@@ -84,7 +95,20 @@
 					</div>
 					<!-- End phone number form -->
 
-					
+					<!-- Phone number form -->
+					<div class="form-group">
+						<label for="exampleInputPhone-3">Type</label>
+
+						<div class="pi-input-with-icon">
+							<select class="form-control" name="tag" >
+								{% for type in types %}
+								<option value="{{tag.id}}">{{type.name}}</option>
+								{% endfor %}
+							</select>
+						</div>
+					</div>
+					<!-- End phone number form -->
+
 					<hr class="pi-divider-gap-10">
 					
 					<!-- Submit button -->

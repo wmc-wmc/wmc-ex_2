@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Text, Tag
+from .models import Text, Tag, Type
 from django.contrib.auth.decorators import login_required
 from article.forms import ArticleForm
 from datetime import datetime, timedelta
@@ -32,6 +32,14 @@ def tag(request):
 	print(texts)
 	return render(request, "tag.html", locals())
 
+def type(request):
+	name = request.GET.get('type', None)
+	if type is None:
+		texts = Type.objects.filter(enable=True)
+	else:
+		texts = Type.objects.filter(enable=True, type__name=name)
+	print(texts)
+	return render(request, "type.html", locals())
 
 @login_required
 def upload_article(request):
