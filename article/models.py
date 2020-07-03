@@ -46,7 +46,7 @@ class Favorite(models.Model):
 
 
 class Comment(models.Model):
-    text = models.ForeignKey(Text, on_delete=models.SET_NULL, null=True)
+    text = models.ForeignKey(Text, on_delete=models.SET_NULL, null=True, blank=True)
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     content = models.TextField(blank=True)
 
