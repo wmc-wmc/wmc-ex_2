@@ -46,12 +46,12 @@ class Favorite(models.Model):
 
 
 class Comment(models.Model):
-    text = models.ForeignKey(Text, on_delete=models.SET_NULL, null=True, blank=True)
+    text = models.ForeignKey(Text, on_delete=models.SET_NULL, null=True)
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     content = models.TextField(blank=True)
 
     def __str__(self):
-        return '%s' % (self.user.username)
+        return '%s %s' % (self.text.title, self.user.username)
 
 
 
