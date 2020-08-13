@@ -50,7 +50,7 @@ class Comment(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     content = models.TextField(blank=True)
 
-    def __str__(self)
+    def __str__(self):
         return '%s %s' % (self.text.title, self.user.username)
 
 
