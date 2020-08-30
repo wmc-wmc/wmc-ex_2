@@ -126,8 +126,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,"static"),
     "/home/ubuntu/static",
 ]
-
+MEDIA_ROOT = os.path.join(BASE_DIR, "static")
+MEDIA_URL = "/media/"
 LOGIN_URL = '/signin/'
 
 FILE_UPLOAD_MAX_MEMORY_SIZE = 26214400
-DATA_UPLOAD_MAX_MEMORY_SIZE = 26214400
+DATA_UPLOAD_MAX_MEMORY_SIZE = 26214400	

@@ -4,16 +4,6 @@
 {% block content %}
 <title>Subject_int-day</title>
 
-<section class="pi-section-w pi-section-white piCaptions">
-	
-		<a href="{{ text.url }}" target="_blank">{{ text.title }}</a>
-		<img src="/{{ text.image1 }}">
-		<img src="/{{ text.image2 }}">
-		<img src="/{{ text.image3 }}">
-
-	
-</section>
-
 
 
 <!-- - - - - - - - - - SECTION - - - - - - - - - -->
@@ -30,7 +20,9 @@
 
 							<div class="pi-img-w pi-img-round-corners pi-img-shadow pi-img-with-overlay">
 
-								<img src="/{{text.image}}" alt=""/>
+								<img src="{{text.image1.url}}" alt=""/>
+								<img src="{{text.image2.url}}" alt=""/>
+								<img src="{{text.image3.url}}" alt=""/>
 
 							</div>
 
